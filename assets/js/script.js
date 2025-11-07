@@ -241,14 +241,14 @@
 
     function init() {
         var locations = [
-            ['Xirosoft', 23.810331, 90.412521, 3],
-            ['Xirosoft', 23.9980797, 90.4229848],
+            ['Xirosoft', -33.6464601, -65.4534669, 3],
+            ['Xirosoft', -32.3476839, -65.0344481],
             ['Xirosoft', 23.8780696, 90.2540589],
         ];
 
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 10,
-            center: new google.maps.LatLng(23.810331, 90.412521),
+            center: new google.maps.LatLng(-33.6464601, -65.4534669),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
 
 
