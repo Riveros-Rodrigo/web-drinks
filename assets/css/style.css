@@ -3858,6 +3858,7 @@ form .top-input {
 .information {
   display: flex;
   transition: 0.5s;
+  align-items: center;
 }
 
 .information a {
@@ -3878,11 +3879,9 @@ form .top-input {
   background: #eff3f9;
   color: #1086ff;
   border-radius: 50px;
-  /* padding: 20px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 45px;
   transition: 0.5s;
 }
 
