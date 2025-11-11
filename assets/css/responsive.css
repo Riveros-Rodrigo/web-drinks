@@ -12,6 +12,7 @@
     .sticky {
         padding: 0px 115px;
     }
+    
 }
 
 @media (max-width: 1468px) {
@@ -31,6 +32,9 @@
     }
     form .top-input {
         right: 320px;
+    }
+    .head-content a{
+        font-size: 13px !important;
     }
 }
 
@@ -54,7 +58,7 @@
     }
     .header02 form .top-input {
         right: 27%;
-      }
+    }
     
 }
 
@@ -73,7 +77,8 @@
     }
     .header02 form .top-input {
         right: 12%;
-      }
+    }
+    
 }
 
 

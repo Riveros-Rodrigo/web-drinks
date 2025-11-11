@@ -202,7 +202,7 @@ li {
   position: absolute;
   border-bottom: 2px solid #ffa922;
   width: 50px;
-  top: 16px;
+  top: 25px;
   left: -63px;
 }
 
@@ -2192,6 +2192,7 @@ form .top-input {
   letter-spacing: 2px;
   display: inline-block;
   padding-bottom: 10px;
+  padding-top: 60px;
 }
 .testimonial-title h2 span,
 .branch-title h2 span {
@@ -2483,24 +2484,25 @@ form .top-input {
  ============================*/
 
 .client-section {
-  padding: 120px 0px;
+  padding: 60px 0px;
 }
 
 .client-title h4 {
-  color: #8e9197;
+  color: #636364;
   text-align: center;
   padding-bottom: 55px;
+  font-size: 44px;
 }
 .client-logo img {
   cursor: pointer;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
     -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
        -o-transition: all .2s ease;
       -ms-transition: all .2s ease;
           transition: all .2s ease;
-          opacity: .2;
+          opacity: .6;
   
 }
 .client-logo img:hover {
@@ -2655,6 +2657,21 @@ form .top-input {
 }
 
 .page-banner-bg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 40 121 / 90%);
+  padding: 10% 0%;
+}
+
+.nosotros-banner {
+  background: url(../img/banner-pic/nosotros-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.nosotros-banner-bg {
   display: block;
   height: 100%;
   width: 100%;
@@ -3355,7 +3372,7 @@ form .top-input {
   position: relative;
   font-family: "Muli";
   font-size: 15px;
-  background: #1086ff;
+  background: #063066;
   color: #ffffff;
   font-weight: 600;
   text-transform: capitalize;
@@ -3902,7 +3919,7 @@ form .top-input {
 }
 
 .information:hover i {
-  background: #1086ff;
+  background: #063066;
   color: #ffffff;
 }
 
@@ -4297,6 +4314,15 @@ top: 0 !important;
 
 }
 
+.highlight-bg{
+  display: block;
+  width: 100%;
+  background: #380669;
+  background: linear-gradient(180deg, rgba(56, 6, 105, 1) 0%, rgba(74, 9, 133, 1) 35%, rgba(141, 84, 193, 1) 100%);
+  margin-bottom: 120px;
+  padding-top: 150px;
+  padding-bottom: 130px;
+}
 
 .s-fun .timer {
   color: #fff;
@@ -4894,5 +4920,21 @@ top: 0 !important;
   /* Banner Section End
   *********************************/
 
+.chat-ws {position: fixed; bottom: 10px; right: 10px; width: 60px; height: 60px; border-radius: 50%; cursor: pointer; display: block; box-shadow: 0px 0px 20px 0px rgba(91, 91, 91, 0.5); z-index: 999;}
+.chat-ws img {padding-left: 0px; padding-top: 0px; width: 100%;}
 
+.title-nosotros{
+  font-size: 36px;
+}
 
+.textgris{
+  color: #636364;
+}
+
+.logoamarillo{
+  color: #FFD43B !important;
+}
+
+.title-marcas{
+  font-size: 40px;
+}
