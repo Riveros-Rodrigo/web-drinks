@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -59,19 +59,19 @@
             <div class="container-fluid">
                 <div class="head-menu d-flex justify-content-center">
                     <div class="head-content">
-                        <i class="fas fa-phone logoamarillo"></i>
+                        <i class="fas fa-phone"></i>
                         <a href="tel:+542657624480">02657 62-4480</a>
                     </div>
                     <div class="head-content">
-                        <i class="fas fa-envelope logoamarillo"></i>
+                        <i class="fas fa-envelope"></i>
                         <a href="mailto:atencionalcliente@grupogib.com.ar">atencionalcliente@grupogib.com.ar.</a>
                     </div>
                     <div class="head-content">
-                        <i class="fas fa-map-marker-alt logoamarillo" ></i>
+                        <i class="fas fa-map-marker-alt" ></i>
                             <a href="https://www.google.com/maps/search/?api=1&query=RN7+KM+695%2C+D5730+Villa+Mercedes%2C+San+Luis" target="_blank">RN7 KM 695, D5730 Villa Mercedes, San Luis</a>
                     </div>
                     <div class="head-content">
-                        <i class="fas fa-map-marker-alt logoamarillo" ></i>
+                        <i class="fas fa-map-marker-alt" ></i>
                                 <a href="https://www.google.com/maps/search/?api=1&query=RP5%2C+D5881%2C+Merlo%2C+San+Luis" target="_blank">RP5, D5881, Merlo, San Luis</a>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                 <div class="head-social-icon ml-auto">
                         <a href="https://www.instagram.com/grupogib" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com/GrupoGib" target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=5492657624480&text= " target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5492657624480&text=Me%20interesa%20recibir%20información" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/company/grupogib/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div class="mobile-btn bttn">
@@ -179,14 +179,63 @@
 </div>
     <!-- fin del hero slider -->
 
+<!-- Elsa Bot Section Start -->
+<section class="elsa-section py-5">
+<div class="container">
+    <div class="row align-items-center">
+    
+    <!-- Texto y botón -->
+    <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+        <h2 class="elsa-title mb-3">
+        ¿QUERÉS HACER ALGUNA <span class="resaltado">CONSULTA, SOLICITUD O RECLAMO?</span>
+        </h2>
+        <p class="elsa-subtitle mb-4">
+        Chateá con <strong>nuestro asistente virtual</strong> las 24 horas.
+        </p>
+        <a href="https://api.whatsapp.com/send/?phone=5491166784173&text&type=phone_number&app_absent=0" target="_blank" 
+        class="btn elsa-btn">
+        CHATEAR AHORA
+        </a>
+    </div>
+
+    <!-- Imagen -->
+    <div class="col-md-6 text-center">
+        <img src="assets/img/elsa-bot/Elsa.png" alt="Elsa Bot" class="img-fluid elsa-img">
+    </div>
+
+    </div>
+</div>
+</section>
+<!-- Elsa Bot Section End -->
+
 <!-- About Section Start -->
         <section class="about-section" id="nosotros">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-xl-6 col-md-12">
-                        <div class="about-pic">
-                            <img src="./assets/img/about/nosotros.jpg" alt="About" class="w-100" />
+                    <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/about/nosotros.jpg" class="d-block w-100" alt="Nosotros 1">
                         </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/about/nosotros2.jpg" class="d-block w-100" alt="Nosotros 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/about/nosotros3.jpg" class="d-block w-100" alt="Nosotros 3">
+                        </div>
+                        </div>
+
+                        <!-- Controles -->
+                        <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
                     </div>
                     <div class="col-xl-6 col-md-12">
                         <div class="title-nosotros">
@@ -213,8 +262,8 @@
                                 y el cuidado del medio ambiente.
                             </p>
                         </div>
-                        <div>
-                            <img src="./assets/img/client-pic/marcas-nosotros.jpg" alt="Marcas" class="w-100" />
+                        <div class="text-center">
+                            <img src="./assets/img/client-pic/marcas-nosotros.jpg" alt="Marcas" class="w-50" />
                         </div>
                     </div>
                 </div>
@@ -484,17 +533,11 @@
                     <div class="col-lg-7">
                         <form action="#">
                             <div class="contact-page-form">
-                                <label for="">Nombre y apellido</label>
                                 <input class="text" type="text" placeholder="Nombre y apellido"/>
-                                <label for="">Empresa</label>
                                 <input class="text" type="text" placeholder="Empresa"/>
-                                <label for="">Email</label>
                                 <input class="text" type="email" placeholder="Email" required/>
-                                <label for="">Teléfono</label>
                                 <input class="text" type="tel" placeholder="Teléfono"/>
-                                <label for="">Mensaje</label>
                                 <textarea class="subject" name="subject" placeholder="Ingrese su consulta"></textarea>
-
                                 <button class="submit-btn">Enviar</button>
                             </div>
                         </form>
@@ -503,556 +546,6 @@
             </div>
         </section>
         <!-- Contact Page Section End -->
-
-    <!-- Product Section Start -->
-    <!-- <section class="products-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="products-title">
-                        <span>Our Products</span>
-                        <h2>Water <span>Served</span> in Style</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="owl-carousel slider">
-                        <div class="item">
-                            <div class="product-item">
-                                <img src="assets/img/product/product-1.png" alt="product" />
-                            </div>
-                            <div class="price">
-                                <div class="price-content">
-                                    <a href="./pages/single_product.html">Five galon water</a>
-                                    <span>$16.50</span>
-                                </div>
-                                <div class="cart-bttn bttn">
-                                    <a href="./pages/single_product.html">Add to Cart <i
-                                            class="ti-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="product-item">
-                                <img src="assets/img/product/product-2.png" alt="product" />
-                            </div>
-                            <div class="price">
-                                <div class="price-content">
-                                    <a href="./pages/single_product.html">Five galon water</a>
-                                    <span>$16.50</span>
-                                </div>
-                                <div class="cart-bttn bttn">
-                                    <a href="./pages/single_product.html">Add to Cart <i
-                                            class="ti-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="product-item">
-                                <img src="assets/img/product/product-3.png" alt="product" />
-                            </div>
-                            <div class="price">
-                                <div class="price-content">
-                                    <a href="./pages/single_product.html">Five galon water</a>
-                                    <span>$16.50</span>
-                                </div>
-                                <div class="cart-bttn bttn">
-                                    <a href="./pages/single_product.html">Add to Cart <i
-                                            class="ti-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Product Section End -->
-
-    <!-- Team Section Start -->
-    <section class="team-section-v2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="team-title">
-                        <span>Team Member</span>
-                        <h2>Our <span>Managing</span> Board</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="team__item__box text-left">
-                        <div class="team__avatar">
-                            <img src="assets/img/team/team-1.jpg" alt="image" />
-                        </div>
-                        <div class="team__content">
-                            <h5><a href="#">Paul Trueman</a></h5>
-                            <div class="designation">Chief Exicutive</div>
-                            <div class="social__icon">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="team__item__box text-left">
-                        <div class="team__avatar">
-                            <img src="assets/img/team/team-2.jpg" alt="image" />
-                        </div>
-                        <div class="team__content">
-                            <h5><a href="#">Paul Trueman</a></h5>
-                            <div class="designation">CEO, Purican</div>
-                            <div class="social__icon">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="team__item__box text-left">
-                        <div class="team__avatar">
-                            <img src="assets/img/team/team-3.jpg" alt="image" />
-                        </div>
-                        <div class="team__content">
-                            <h5><a href="#">Paul Trueman</a></h5>
-                            <div class="designation">CEO, Purican</div>
-                            <div class="social__icon">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Testimonial Section Start -->
-    <section class="testimonial-section">
-        <div class="testimonial-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="testimonial-title">
-                            <span>Testimonials</span>
-                            <h2>Happy <span>Customer</span> Says</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="owl-carousel slider-2">
-                            <div class="item">
-                                <div class="testimonial-slider">
-                                    <div class="testimonial-pic d-flex">
-                                        <img src="assets/img/testimonials/testimonial-1.jpg" alt="" />
-                                        <a href="#">Daniel Abraham</a>
-                                        <i class="ti-quote-right"></i>
-                                    </div>
-                                    <p>
-                                        From from can't isen hath night tree likeness lesser our together dry face. Give
-                                        light also third dominion brought night you will image
-                                        likeness created the third so heaven creeping unto.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial-slider">
-                                    <div class="testimonial-pic d-flex">
-                                        <img src="assets/img/testimonials/testimonial-2.jpg" alt="" />
-                                        <a href="#">Roser Feshoner</a>
-                                        <i class="ti-quote-right"></i>
-                                    </div>
-                                    <p>
-                                        From from can't isen hath night tree likeness lesser our together dry face. Give
-                                        light also third dominion brought night you will image
-                                        likeness created the third so heaven creeping unto.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial-slider">
-                                    <div class="testimonial-pic d-flex">
-                                        <img src="assets/img/testimonials/testimonial-1.jpg" alt="" />
-                                        <a href="#">Daniel Abraham</a>
-                                        <i class="ti-quote-right"></i>
-                                    </div>
-                                    <p>
-                                        From from can't isen hath night tree likeness lesser our together dry face. Give
-                                        light also third dominion brought night you will image
-                                        likeness created the third so heaven creeping unto.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial-slider">
-                                    <div class="testimonial-pic d-flex">
-                                        <img src="assets/img/testimonials/testimonial-2.jpg" alt="" />
-                                        <a href="#">Roser Feshoner</a>
-                                        <i class="ti-quote-right"></i>
-                                    </div>
-                                    <p>
-                                        From from can't isen hath night tree likeness lesser our together dry face. Give
-                                        light also third dominion brought night you will image
-                                        likeness created the third so heaven creeping unto.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial-slider">
-                                    <div class="testimonial-pic d-flex">
-                                        <img src="assets/img/testimonials/testimonial-1.jpg" alt="" />
-                                        <a href="#">Daniel Abraham</a>
-                                        <i class="ti-quote-right"></i>
-                                    </div>
-                                    <p>
-                                        From from can't isen hath night tree likeness lesser our together dry face. Give
-                                        light also third dominion brought night you will image
-                                        likeness created the third so heaven creeping unto.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial-slider">
-                                    <div class="testimonial-pic d-flex">
-                                        <img src="assets/img/testimonials/testimonial-2.jpg" alt="" />
-                                        <a href="#">Roser Feshoner</a>
-                                        <i class="ti-quote-right"></i>
-                                    </div>
-                                    <p>
-                                        From from can't isen hath night tree likeness lesser our together dry face. Give
-                                        light also third dominion brought night you will image
-                                        likeness created the third so heaven creeping unto.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial Section End-->
-
-    <!-- Pricing Section Start -->
-    <!-- <section class="pricing__section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="pricing-title">
-                        <span>pricing plan</span>
-                        <h2>Reasonable <span>pricing</span> plan</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="pricing__wrapper text-center">
-                        <div class="pricing__logo">
-                            <svg width="51" height="50" viewBox="0 0 51 50" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M31.2432 25.3916C30.7041 25.3916 30.2666 25.8291 30.2666 26.3682C30.2666 26.9073 30.7041 27.3448 31.2432 27.3448C31.7823 27.3448 32.2198 26.9073 32.2198 26.3682C32.2198 25.8291 31.7823 25.3916 31.2432 25.3916Z"
-                                    fill="black" />
-                                <path
-                                    d="M0.626454 23.1056C0.62909 23.1086 0.631434 23.1121 0.634169 23.115C0.634559 23.1154 0.634852 23.1159 0.635243 23.1164L24.6594 49.6796C24.8384 49.8776 25.1097 50.0011 25.3837 50.0011C25.6569 50.0011 25.9277 49.879 26.1081 49.6796L50.1322 23.1164C50.1326 23.116 50.1329 23.1155 50.1333 23.115C50.136 23.112 50.1383 23.1086 50.141 23.1056C50.454 22.7495 50.4622 22.2266 50.1781 21.8622C50.1754 21.8587 50.1733 21.8547 50.1705 21.8512L42.3578 12.0853C42.1725 11.8536 41.8918 11.7188 41.5951 11.7188C37.6139 11.7188 12.4118 11.7188 9.17231 11.7188C8.87562 11.7188 8.59505 11.8536 8.40969 12.0853L0.59696 21.8512C0.594128 21.8547 0.592175 21.8586 0.589343 21.8622C0.302323 22.2304 0.316972 22.7535 0.626454 23.1056ZM20.077 13.6719H30.6903L35.378 21.4847H15.3894L20.077 13.6719ZM15.1628 23.4378H35.6044L25.3836 46.6051L15.1628 23.4378ZM37.7394 23.4378H47.2079L28.7217 43.8777L37.7394 23.4378ZM13.028 23.4378L22.0455 43.8777L3.55945 23.4378H13.028ZM47.3759 21.4847H37.6557L32.968 13.6719H41.1257L47.3759 21.4847ZM9.64156 13.6719H17.7992L13.1116 21.4847H3.39138L9.64156 13.6719Z"
-                                    fill="black" />
-                                <path
-                                    d="M27.3372 25.3916H20.0889C19.5495 25.3916 19.1123 25.8288 19.1123 26.3682C19.1123 26.9076 19.5495 27.3448 20.0889 27.3448H27.3372C27.8765 27.3448 28.3137 26.9076 28.3137 26.3682C28.3137 25.8288 27.8765 25.3916 27.3372 25.3916Z"
-                                    fill="black" />
-                                <path
-                                    d="M25.3838 7.81273C25.9232 7.81273 26.3604 7.37551 26.3604 6.83614V0.976591C26.3604 0.43722 25.9232 0 25.3838 0C24.8444 0 24.4072 0.43722 24.4072 0.976591V6.83614C24.4072 7.37551 24.8444 7.81273 25.3838 7.81273Z"
-                                    fill="black" />
-                                <path
-                                    d="M31.9338 7.52674L35.8402 3.62037C36.2215 3.23902 36.2215 2.62064 35.8402 2.23918C35.4588 1.85772 34.8404 1.85782 34.459 2.23918L30.5526 6.14555C30.1713 6.52691 30.1713 7.14528 30.5526 7.52674C30.934 7.9081 31.5524 7.9082 31.9338 7.52674Z"
-                                    fill="black" />
-                                <path
-                                    d="M18.833 7.5267C19.2144 7.90806 19.8328 7.90806 20.2142 7.5267C20.5956 7.14534 20.5956 6.52697 20.2142 6.14551L16.3079 2.23914C15.9265 1.85779 15.3081 1.85779 14.9267 2.23914C14.5452 2.6205 14.5453 3.23888 14.9267 3.62034L18.833 7.5267Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <div class="pricing__header">Basic</div>
-                        <div class="sub__header">Starting Business</div>
-                        <div class="price">
-                            <sup>$</sup> 25<span>Per <br />Month</span>
-                        </div>
-                        <ul>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> 4 Hour sessions</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Free editing</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Free 24/7 support</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Online gallery</li>
-                        </ul>
-                        <div class="card__btn bttn">
-                            <a href="#" class="m-auto">Choose Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="pricing__wrapper text-center active">
-                        <div class="pricing__logo">
-                            <svg width="51" height="44" viewBox="0 0 51 44" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M49.4072 24.9512H47.3564C46.8172 24.9512 46.3799 24.514 46.3799 23.9746C46.3799 23.4353 46.8172 22.998 47.3564 22.998H49.4072C49.9465 22.998 50.3838 23.4353 50.3838 23.9746C50.3838 24.514 49.9465 24.9512 49.4072 24.9512Z"
-                                    fill="#FF6600" />
-                                <path
-                                    d="M3.41113 24.9512H1.36035C0.820996 24.9512 0.383789 24.514 0.383789 23.9746C0.383789 23.4353 0.820996 22.998 1.36035 22.998H3.41113C3.95039 22.998 4.3877 23.4353 4.3877 23.9746C4.3877 24.514 3.95039 24.9512 3.41113 24.9512Z"
-                                    fill="#FF6600" />
-                                <path
-                                    d="M40.1953 10.1395C39.9453 10.1395 39.6955 10.0442 39.5048 9.85349C39.1234 9.47214 39.1234 8.85378 39.5048 8.47244L40.9549 7.02234C41.3363 6.64099 41.9545 6.64099 42.336 7.02234C42.7174 7.40369 42.7174 8.02205 42.336 8.40349L40.8859 9.85359C40.6951 10.0442 40.4452 10.1395 40.1953 10.1395Z"
-                                    fill="#FF6600" />
-                                <path
-                                    d="M10.5721 10.1396C10.3221 10.1396 10.0723 10.0443 9.88162 9.85359L8.43152 8.40349C8.05017 8.02214 8.05017 7.40378 8.43152 7.02234C8.81296 6.64099 9.43113 6.64099 9.81267 7.02234L11.2628 8.47244C11.6441 8.85378 11.6441 9.47214 11.2628 9.85349C11.0719 10.0443 10.8221 10.1396 10.5721 10.1396Z"
-                                    fill="#FF6600" />
-                                <path
-                                    d="M25.3838 4.00391C24.8444 4.00391 24.4072 3.5667 24.4072 3.02734V0.976562C24.4072 0.437207 24.8444 0 25.3838 0C25.923 0 26.3604 0.437207 26.3604 0.976562V3.02734C26.3604 3.5667 25.923 4.00391 25.3838 4.00391Z"
-                                    fill="#FF6600" />
-                                <path
-                                    d="M25.3838 30.2422C25.1054 30.2422 24.8404 30.1234 24.655 29.9156L20.4861 25.2414C20.1965 24.9167 20.1566 24.4396 20.3882 24.0715L24.5573 17.443C24.736 17.1588 25.0482 16.9863 25.3839 16.9863C25.7197 16.9863 26.0319 17.1588 26.2106 17.443L30.3795 24.0715C30.6112 24.4397 30.5712 24.9168 30.2817 25.2414L26.1127 29.9156C25.9273 30.1234 25.6622 30.2422 25.3838 30.2422ZM22.4325 24.4896L25.3838 27.7985L28.3351 24.4896L25.3838 19.7972L22.4325 24.4896Z"
-                                    fill="#FF6600" />
-                                <path
-                                    d="M19.199 35.9335C18.7971 35.9335 18.4262 35.6765 18.2849 35.3005C18.1433 34.9239 18.2528 34.4885 18.555 34.223C18.8746 33.9423 19.3529 33.903 19.7143 34.1274C20.0611 34.3427 20.2383 34.7648 20.1528 35.163C20.0575 35.6068 19.6528 35.9335 19.199 35.9335Z"
-                                    fill="#FF6600" />
-                                <path
-                                    d="M46.2244 11.4725C45.8892 11.2568 45.4565 11.2665 45.1314 11.497L38.7487 16.0208L36.8186 11.704C36.702 11.4432 36.4769 11.2464 36.2026 11.1657C35.9283 11.0851 35.6328 11.1286 35.3934 11.2848L30.2953 14.6117L26.2091 8.14805C26.0302 7.86494 25.7187 7.69336 25.3837 7.69336C25.0487 7.69336 24.7372 7.86494 24.5583 8.14805L20.4721 14.6117L15.374 11.2848C15.1347 11.1285 14.8391 11.0852 14.5647 11.1657C14.2905 11.2464 14.0655 11.4431 13.9488 11.704L12.0187 16.0208L5.63594 11.497C5.31084 11.2664 4.87813 11.2568 4.54297 11.4725C4.20772 11.6881 4.03721 12.0858 4.11221 12.4773L8.2502 34.0927V34.093L8.73692 41.3952C8.76768 41.8582 9.12022 42.2355 9.57998 42.2979C14.8232 43.0093 20.1035 43.3649 25.3837 43.3649C30.6639 43.3649 35.9441 43.0093 41.1874 42.2979C41.6472 42.2355 41.9996 41.8582 42.0305 41.3952L42.5172 34.093C42.5172 34.0929 42.5172 34.0928 42.5172 34.0927L46.6552 12.4773C46.7302 12.0858 46.5597 11.6881 46.2244 11.4725ZM35.5025 13.5457L37.124 17.1723L33.5262 19.7224L31.3391 16.2628L35.5025 13.5457ZM15.2648 13.5457L19.4283 16.2628L17.2412 19.7224L13.6434 17.1723L15.2648 13.5457ZM40.7123 33.1331L39.2627 33.3084C34.098 33.933 28.8418 34.2098 23.64 34.1314C23.6351 34.1314 23.6301 34.1313 23.6251 34.1313C23.0927 34.1313 22.657 34.5589 22.6489 35.0932C22.6408 35.6324 23.0714 36.0762 23.6107 36.0844C24.1957 36.0932 24.7806 36.0976 25.3666 36.0976C30.0806 36.0976 34.8261 35.8123 39.4971 35.2474L40.4908 35.1272L40.1349 40.467C30.3418 41.7269 20.4255 41.7269 10.6324 40.467L10.2765 35.1272L11.2701 35.2474C12.3848 35.3821 13.517 35.5025 14.6354 35.6053C15.1714 35.6554 15.6478 35.2592 15.6971 34.7221C15.7464 34.185 15.351 33.7097 14.8139 33.6604C13.7141 33.5594 12.6008 33.4409 11.5046 33.3084L10.055 33.1331L6.48682 14.4939L16.9519 21.9112C17.1704 22.0661 17.4429 22.1245 17.7061 22.0725C17.9688 22.0205 18.1988 21.8628 18.342 21.6362L25.3837 10.4975L32.4254 21.6362C32.5686 21.8627 32.7984 22.0205 33.0613 22.0725C33.3242 22.1245 33.5968 22.0661 33.8155 21.9112L44.2806 14.4939L40.7123 33.1331Z"
-                                    fill="#FF6600" />
-                            </svg>
-                        </div>
-                        <div class="pricing__header">standard</div>
-                        <div class="sub__header">Starting Business</div>
-                        <div class="price">
-                            <sup>$</sup> 45<span>Per <br />Month</span>
-                        </div>
-                        <ul>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> 4 Hour sessions</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Free editing</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Free 24/7 support</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Online gallery</li>
-                        </ul>
-                        <div class="card__btn bttn">
-                            <a href="#" class="m-auto">Choose Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="pricing__wrapper text-center">
-                        <div class="pricing__logo">
-                            <svg width="51" height="50" viewBox="0 0 51 50" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M47.0464 16.5633C44.7941 15.0106 41.9526 14.6653 39.1939 15.5933C37.7929 14.1518 35.8606 13.3329 33.7171 13.3329C31.4775 13.3329 29.8429 13.8097 28.6897 14.3746C28.7077 14.3066 28.7169 14.2366 28.7171 14.1663V10.833C28.7172 10.6522 28.658 10.4763 28.5487 10.3322C28.7823 10.1089 29.038 9.90997 29.3119 9.73845C30.5324 8.98219 31.8702 9.03011 33.2884 9.88126C33.4234 9.96231 33.5787 10.0034 33.7362 9.99982C33.8936 9.99623 34.0469 9.94808 34.1781 9.86096C34.3093 9.77384 34.4132 9.65131 34.4776 9.50757C34.542 9.36384 34.5644 9.20479 34.5421 9.04886C34.5267 8.94115 34.1432 6.39782 32.1984 5.10417C31.3162 4.51751 30.2783 4.28636 29.1041 4.40949C29.0941 4.24213 29.0706 4.07586 29.0338 3.9123C28.5636 1.82136 26.0933 0.2873 25.8131 0.118758C25.6835 0.0410488 25.5353 0 25.3843 0C25.2333 0 25.0851 0.0410488 24.9556 0.118758C24.4617 0.427563 23.9955 0.77845 23.562 1.16751C22.5565 2.06845 21.9417 2.99199 21.7348 3.9123C21.6981 4.07553 21.6746 4.24145 21.6645 4.40845C20.5117 4.2874 19.4904 4.50907 18.6173 5.07334C16.6313 6.35688 16.2416 8.93949 16.226 9.04886C16.2037 9.20479 16.2261 9.36384 16.2905 9.50757C16.3549 9.65131 16.4588 9.77384 16.59 9.86096C16.7212 9.94808 16.8745 9.99623 17.0319 9.99982C17.1894 10.0034 17.3447 9.96231 17.4797 9.88126C18.8977 9.03042 20.2356 8.98219 21.4562 9.73845C21.7301 9.90995 21.9858 10.1089 22.2194 10.3322C22.1099 10.4762 22.0506 10.6521 22.0505 10.833V14.1664C22.0507 14.2367 22.0599 14.3067 22.0779 14.3747C20.9247 13.8097 19.29 13.333 17.0505 13.333C14.9074 13.333 12.9751 14.1516 11.5742 15.5929C8.79546 14.6569 5.92837 15.018 3.67181 16.5976C1.64421 18.0175 0.383789 20.2791 0.383789 22.4997C0.383789 26.7966 3.56796 30.186 3.93212 30.5595C6.86733 34.0926 7.62254 37.1915 7.8165 38.5016C7.33996 38.6855 6.93122 39.011 6.64532 39.4343C6.35942 39.8576 6.21008 40.3583 6.21741 40.8691C6.22474 41.3798 6.38839 41.876 6.68632 42.291C6.98426 42.7059 7.40217 43.0195 7.88379 43.1897V45.143C7.32803 45.3398 6.85969 45.7266 6.56149 46.2352C6.26329 46.7438 6.15443 47.3414 6.25414 47.9225C6.35384 48.5035 6.65569 49.0307 7.10637 49.4108C7.55705 49.7909 8.12756 49.9995 8.71712 49.9997H42.0505C42.64 49.9995 43.2105 49.7909 43.6612 49.4108C44.1119 49.0307 44.4137 48.5035 44.5134 47.9225C44.6131 47.3414 44.5043 46.7438 44.2061 46.2352C43.9079 45.7266 43.4395 45.3398 42.8838 45.143V43.1897C43.3654 43.0195 43.7833 42.7059 44.0813 42.291C44.3792 41.8761 44.5429 41.3799 44.5503 40.8691C44.5576 40.3584 44.4083 39.8577 44.1224 39.4344C43.8365 39.0111 43.4278 38.6855 42.9513 38.5016C43.1457 37.1891 43.9014 34.0913 46.8355 30.5595C47.1996 30.186 50.3838 26.7966 50.3838 22.4997C50.3838 20.2572 49.105 17.9825 47.0464 16.5633ZM36.1616 38.333C36.0971 36.6016 36.2316 32.0746 38.92 27.8557C39.8179 28.2885 40.6846 28.7831 41.5138 29.3362C41.4757 29.3841 41.439 29.4304 41.4 29.4791C38.7094 32.8425 38.0776 36.6732 37.9295 38.3332L36.1616 38.333ZM42.542 28.0195C41.6826 27.4384 40.7847 26.9164 39.8545 26.457C41.0557 24.5047 41.5748 22.3915 41.379 20.3881C42.7533 20.1519 43.8455 20.3152 44.5622 20.8726C44.8132 21.0642 45.0174 21.3101 45.1597 21.5919C45.302 21.8737 45.3786 22.184 45.3838 22.4997C45.3838 23.6593 44.9125 24.9089 42.542 28.0195ZM39.0289 18.194C40.2655 20.5969 39.8955 23.583 38.0393 26.182C34.6188 30.9707 34.4127 36.2294 34.4906 38.333H32.9064C32.9907 36.3053 33.3889 31.0554 35.265 27.9284C37.6713 23.9188 39.4474 20.3847 36.8067 17.7438C35.7007 16.6377 33.459 16.2125 31.3556 16.7087C30.0358 17.0117 28.8308 17.6873 27.8838 18.6551V16.9637C28.3472 16.4644 30.023 14.9997 33.7171 14.9997C36.0139 14.9997 37.9995 16.1938 39.0289 18.194ZM27.8838 38.333V25.083C30.0784 25.2212 32.2534 25.5814 34.3754 26.1581C34.1983 26.4632 34.0176 26.7684 33.8359 27.0715C31.7221 30.594 31.3143 36.2159 31.2359 38.333H27.8838ZM19.5317 38.333C19.4533 36.2159 19.0455 30.5934 16.9317 27.0709C16.7497 26.7677 16.5689 26.4623 16.3918 26.157C18.5139 25.5804 20.689 25.2203 22.8838 25.0824V38.333H19.5317ZM35.2029 24.6602C32.8159 23.9787 30.3617 23.5603 27.8838 23.4124V21.8093C28.7484 19.3747 30.6624 18.5846 31.738 18.3307C33.4081 17.9363 35.0273 18.3219 35.6276 18.9223C36.4297 19.7244 36.6332 20.6306 36.3086 21.9518C36.1084 22.7676 35.7037 23.6949 35.2029 24.6602ZM27.0505 11.6664V13.333H23.7171V11.6664H27.0505ZM22.8838 23.4124C20.4059 23.5603 17.9516 23.9786 15.5646 24.66C15.0639 23.6948 14.6592 22.7675 14.4588 21.9517C14.1342 20.6301 14.3379 19.7241 15.1397 18.9222C15.7401 18.3218 17.3591 17.9363 19.0294 18.3306C20.1051 18.5845 22.019 19.3746 22.8836 21.8092L22.8838 23.4124ZM24.5505 14.9997H26.2171V38.333H24.5505V14.9997ZM31.2674 6.48667C31.7104 6.79395 32.0727 7.20347 32.3238 7.68053C30.6535 7.27157 29.3006 7.76959 28.3739 8.35907C28.1334 8.5127 27.9037 8.68253 27.6864 8.8674C27.7549 7.94727 28.0618 7.06083 28.5769 6.29532C28.6042 6.25438 28.63 6.21313 28.6551 6.17167C29.7054 5.9299 30.5837 6.03522 31.2674 6.48667ZM23.3597 4.2799C23.5746 3.31834 24.6637 2.35542 25.3838 1.8347C26.1044 2.35553 27.1931 3.31845 27.4079 4.2799C27.4523 4.46666 27.4559 4.66081 27.4183 4.84907C27.3808 5.03734 27.3031 5.21528 27.1905 5.37074C26.2783 6.73191 25.8734 8.37033 26.0466 9.9997H24.721C24.8942 8.37033 24.4893 6.73191 23.5771 5.37074C23.4645 5.21528 23.3868 5.03734 23.3492 4.84907C23.3117 4.66081 23.3153 4.46666 23.3597 4.2799ZM18.4438 7.68063C18.6999 7.1932 19.0728 6.77675 19.529 6.46845C20.2082 6.03261 21.0765 5.93449 22.1123 6.17292C22.1374 6.21459 22.1632 6.25511 22.1902 6.29584C22.7054 7.06135 23.0123 7.94779 23.0808 8.86792C22.8634 8.68303 22.6337 8.51319 22.3933 8.35959C21.4671 7.76949 20.1147 7.27115 18.4438 7.68063ZM17.0505 14.9997C19.3788 14.9997 20.8832 15.5846 21.7352 16.0752C22.1604 16.3125 22.5476 16.6122 22.8838 16.9644V18.6551C21.9368 17.6874 20.732 17.0118 19.4123 16.7087C17.309 16.2121 15.0673 16.6377 13.9612 17.7438C11.3201 20.3847 13.0966 23.9188 15.5029 27.9284C17.3791 31.0556 17.7773 36.3057 17.8615 38.333H16.2782C16.356 36.2294 16.1499 30.9707 12.7294 26.182C10.873 23.583 10.503 20.5969 11.7398 18.194C12.7681 16.1938 14.7537 14.9997 17.0505 14.9997ZM12.8384 38.333C12.6902 36.6732 12.0585 32.8425 9.36785 29.4789C9.32889 29.4302 9.29212 29.3838 9.25389 29.3357C10.0831 28.7828 10.9498 28.2882 11.8476 27.8555C14.5257 32.0622 14.6657 36.599 14.6043 38.333H12.8384ZM10.9135 26.458C9.98325 26.9173 9.08535 27.4394 8.22598 28.0205C5.85514 24.9089 5.38379 23.6593 5.38379 22.4997C5.38904 22.1841 5.46571 21.8738 5.60803 21.5921C5.75036 21.3103 5.95464 21.0645 6.20556 20.873C6.92233 20.3155 8.01441 20.1524 9.38879 20.3885C9.19296 22.392 9.71223 24.5053 10.9135 26.458ZM5.14056 29.4118C5.10962 29.3802 2.05046 26.2594 2.05046 22.4997C2.05046 20.8143 3.03796 19.0759 4.62764 17.963C6.29702 16.7943 8.39848 16.4604 10.4922 17.0081C10.4104 17.146 10.3315 17.2868 10.2571 17.4313C10.0392 17.8556 9.85901 18.2983 9.71848 18.7542C7.38348 18.3432 5.97379 18.9425 5.18264 19.5578C4.73197 19.9056 4.36597 20.351 4.11215 20.8605C3.85832 21.37 3.72326 21.9305 3.71712 22.4997C3.71712 24.4799 4.73327 26.3539 8.06639 30.5205C10.3872 33.4215 10.9989 36.7988 11.1601 38.333H9.47973C9.27139 36.8073 8.44629 33.3729 5.19066 29.4662C5.17546 29.4476 5.15775 29.4285 5.14056 29.4114V29.4118ZM9.55046 44.9997V43.333H41.2171V44.9997H9.55046ZM42.0505 48.333H8.71712C8.49611 48.333 8.28415 48.2452 8.12787 48.089C7.97159 47.9327 7.88379 47.7207 7.88379 47.4997C7.88379 47.2787 7.97159 47.0667 8.12787 46.9104C8.28415 46.7542 8.49611 46.6664 8.71712 46.6664H42.0505C42.2715 46.6664 42.4834 46.7542 42.6397 46.9104C42.796 47.0667 42.8838 47.2787 42.8838 47.4997C42.8838 47.7207 42.796 47.9327 42.6397 48.089C42.4834 48.2452 42.2715 48.333 42.0505 48.333ZM42.0505 41.6664H8.71712C8.49611 41.6664 8.28415 41.5786 8.12787 41.4223C7.97159 41.266 7.88379 41.054 7.88379 40.833C7.88379 40.612 7.97159 40.4001 8.12787 40.2438C8.28415 40.0875 8.49611 39.9997 8.71712 39.9997H42.0505C42.2715 39.9997 42.4834 40.0875 42.6397 40.2438C42.796 40.4001 42.8838 40.612 42.8838 40.833C42.8838 41.054 42.796 41.266 42.6397 41.4223C42.4834 41.5786 42.2715 41.6664 42.0505 41.6664ZM45.6278 29.4104C45.61 29.4282 45.5931 29.4469 45.5769 29.4662C42.3213 33.3724 41.4966 36.8073 41.2878 38.333H39.6077C39.7687 36.7985 40.3804 33.4213 42.7015 30.5205C46.0348 26.3539 47.0508 24.4801 47.0508 22.4997C47.0447 21.9304 46.9098 21.3699 46.656 20.8603C46.4023 20.3507 46.0363 19.9053 45.5857 19.5574C44.794 18.9421 43.3848 18.3428 41.0497 18.7538C40.9093 18.2979 40.7291 17.8552 40.5112 17.4308C40.4367 17.2863 40.3583 17.1452 40.276 17.0076C42.353 16.4644 44.4353 16.787 46.1008 17.9352C47.7145 19.0482 48.7171 20.7972 48.7171 22.4997C48.7171 26.2594 45.658 29.3802 45.6278 29.4104Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <div class="pricing__header">premium</div>
-                        <div class="sub__header">Starting Business</div>
-                        <div class="price">
-                            <sup>$</sup> 60<span>Per <br />Month</span>
-                        </div>
-                        <ul>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> 4 Hour sessions</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Free editing</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Free 24/7 support</li>
-                            <li><img src="assets/img/pricing/check.png" alt="icon" /> Online gallery</li>
-                        </ul>
-                        <div class="card__btn bttn">
-                            <a href="#" class="m-auto">Choose Plan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Pricing Section End -->
-
-    <!-- Count section start -->
-    <!--<section class="count-section">
-        <div class="count-bg mb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-fun text-center">
-                            <div class="s-fun">
-                                <i class="fas fa-check-double"></i>
-                                <span class="timer" data-from="0" data-to="805" data-speed="5000"
-                                    data-refresh-interval="50">805</span>
-                                <br />
-                                <span>Project Complate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-fun text-center">
-                            <div class="s-fun">
-                                <i class="fas fa-user-check"></i>
-                                <span class="timer" data-from="0" data-to="801" data-speed="5000"
-                                    data-refresh-interval="50">801</span>
-                                <br />
-                                <span>Active Client</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-fun text-center">
-                            <div class="s-fun">
-                                <i class="far fa-handshake"></i>
-                                <span class="timer" data-from="0" data-to="305" data-speed="5000"
-                                    data-refresh-interval="50">305</span>
-                                <br />
-                                <span>Our Commits</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-fun text-center">
-                            <div class="s-fun">
-                                <i class="fas fa-users"></i>
-                                <span class="timer" data-from="0" data-to="102" data-speed="5000"
-                                    data-refresh-interval="50">102</span>
-                                <br />
-                                <span>Team Members</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- Count SECTION END -->
-
-    <!-- Journal Section Start -->
-    <!-- <section class="journal-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="journal-title">
-                        <span>Recent articles</span>
-                        <h2>Recent <span>From</span> Journal</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="journal-photo">
-                        <img src="assets/img/journal/journal-pic-1.jpg" alt="" class="w-100" />
-                        <div class="journal-item">
-                            <ul class="journal-content">
-                                <li><i class="far fa-user"></i> <a href="#">By Morgan</a></li>
-                                <li><i class="fas fa-calendar-alt"></i><a href="#">04 April. 2023</a></li>
-                                <li><i class="fas fa-mouse-pointer"></i> <a href="#">Bottle, Drinking water</a></li>
-                            </ul>
-                            <h4><a href="#">Give abundantly there likeness to gathered forever clean deatt good.</a>
-                            </h4>
-                            <a href="#" class="read-btn">Continue Reading <i class="fas fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="journal-photo">
-                        <img src="assets/img/journal/journal-pic-2.jpg" alt="" class="w-100" />
-                        <div class="journal-item">
-                            <ul class="journal-content">
-                                <li><i class="far fa-user"></i> <a href="#">By Morgan</a></li>
-                                <li><i class="fas fa-calendar-alt"></i><a href="#">04 April. 2023</a></li>
-                                <li><i class="fas fa-mouse-pointer"></i> <a href="#">Bottle, Drinking water</a></li>
-                            </ul>
-                            <h4><a href="#">Heaven with firmament winged one was sign Created have dry face man
-                                    make.</a></h4>
-                            <a href="#" class="read-btn">Continue Reading <i class="fas fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Journal Section End -->
-
-    <!-- Client Area Start -->
-    <!-- <section class="client-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="client-title">
-                        <h4>Worldwide Trusted Client</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="owl-carousel slider-3">
-                        <div class="item">
-                            <div class="client-logo">
-                                <img src="assets/img/client-pic/client-1.png" alt="client" />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-logo">
-                                <img src="assets/img/client-pic/client-2.png" alt="client" />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-logo">
-                                <img src="assets/img/client-pic/client-3.png" alt="client" />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-logo">
-                                <img src="assets/img/client-pic/client-4.png" alt="client" />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-logo">
-                                <img src="assets/img/client-pic/client-5.png" alt="client" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Client Area End -->
 
     <!-- Contact Section Start -->
     <section class="contact-section">
@@ -1063,12 +556,12 @@
                         <h4>Secciones</h4>
                     </div>
                     <ul class="contact-link">
-                        <li><a href="tel:322356526523">Inicio</a></li>                        
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Encontranos</a></li>
-                        <li><a href="#">Marcas</a></li>
-                        <li><a href="#">Global</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="index.html">Inicio</a></li>                        
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#encontranos">Encontranos</a></li>
+                        <li><a href="#marcas">Marcas</a></li>
+                        <!--<li><a href="#">Global</a></li>-->
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -1091,11 +584,11 @@
                         <h4>Contactos</h4>
                     </div>
                     <ul class="contact-link">
-                        <li><a href="#">Teléfono: 02657 62-4480</a></li>
-                        <li><a href="#">WhatsApp: +54 9 2657 62-4480</a></li>
+                        <li><a href="tel:+542657624480">Teléfono: 02657 62-4480</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5492657624480&text=Me%20interesa%20recibir%20información">WhatsApp: +54 9 2657 62-4480</a></li>
                         <li><a href="mailto:atencionalcliente@grupogib.com.ar">atencionalcliente@grupogib.com.ar.</a></li>
-                        <li><a href="#">Dirección: RN7 KM 695, D5730 Villa Mercedes, San Luis</a></li>
-                        <li><a href="#">Dirección: RP5, D5881, Merlo, San Luis</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=RN7+KM+695%2C+D5730+Villa+Mercedes%2C+San+Luis">Dirección: RN7 KM 695, D5730 Villa Mercedes, San Luis</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=RP5%2C+D5881%2C+Merlo%2C+San+Luis">Dirección: RP5, D5881, Merlo, San Luis</a></li>
                     </ul>
                 </div>
                 <!--<div class="col-lg-3 col-md-6">
@@ -1125,14 +618,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="footer-content">
-                        <p>Copyright © 2025 <a href="#">grupogib.com</a> Todos los derechos reservados.</p>
+                        <p>Copyright © 2025 <a href="https://grupogib.com.ar">grupogib.com</a> Todos los derechos reservados.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="footer-social text-right">
                         <a href="https://www.instagram.com/grupogib" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com/GrupoGib" target="_blank"> <i class="fab fa-facebook-f"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=5492657624480&text= " target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5492657624480&text=" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/company/grupogib/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
@@ -1140,213 +633,6 @@
         </div>
     </footer>
     <!-- Footer End -->
-
-    <!-- Header FlyoutCart Start
-    <div class="flyoutCart">
-        <div class="flyout__flip">
-            <div class="flyout__inner">
-                <div class="cart__header-top">
-                    <div class="main__title">Your Cart</div>
-                    <div class="close__btn action__btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18" stroke="#344054" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M6 6L18 18" stroke="#344054" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        Close
-                    </div>
-                </div>
-                <div class="cart__title">
-                    <h3>Product</h3>
-                    <h3>Price</h3>
-                </div>
-                <div class="cart__items">
-                    Shopping Cart Item Start
-                    <div class="shopping-card">
-                        <a href="#" class="shopping-card__image">
-                            <img src="assets/img/product/product-1.png" alt="cart-product" />
-                        </a>
-                        <div class="shopping-card__content">
-                            <div class="shopping-card__content-top">
-                                <h5 class="product__title">
-                                    <a href="#">Bottled Pure Water</a>
-                                </h5>
-                                <h5 class="product__price">$24.40</h5>
-                            </div>
-                            <div class="shopping-card__content-bottom">
-                                <div class="quantity__wrapper">
-                                    <div class="quantity">
-                                        <button type="button" class="decressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                        <input class="qnttinput" type="number" disabled value="0" min="01" max="100" />
-                                        <button type="button" class="incressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                    </div>
-                                    <div class="stock__item">In Stock</div>
-                                </div>
-                                <button type="button" class="action__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.25 3.5H2.75M2.75 3.5H14.75M2.75 3.5V14C2.75 14.3978 2.90804 14.7794 3.18934 15.0607C3.47064 15.342 3.85218 15.5 4.25 15.5H11.75C12.1478 15.5 12.5294 15.342 12.8107 15.0607C13.092 14.7794 13.25 14.3978 13.25 14V3.5H2.75ZM5 3.5V2C5 1.60218 5.15804 1.22064 5.43934 0.93934C5.72064 0.658035 6.10218 0.5 6.5 0.5H9.5C9.89782 0.5 10.2794 0.658035 10.5607 0.93934C10.842 1.22064 11 1.60218 11 2V3.5M6.5 7.25V11.75M9.5 7.25V11.75"
-                                            stroke="#667085" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>Delete</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    Shopping Cart Item Start
-                    <div class="shopping-card">
-                        <a href="#" class="shopping-card__image">
-                            <img src="assets/img/product/product-2.png" alt="cart-product" />
-                        </a>
-                        <div class="shopping-card__content">
-                            <div class="shopping-card__content-top">
-                                <h5 class="product__title">
-                                    <a href="#">Bottled Pure Water</a>
-                                </h5>
-                                <h5 class="product__price">$24.40</h5>
-                            </div>
-                            <div class="shopping-card__content-bottom">
-                                <div class="quantity__wrapper">
-                                    <div class="quantity">
-                                        <button type="button" class="decressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                        <input class="qnttinput" type="number" disabled value="0" min="01" max="100" />
-                                        <button type="button" class="incressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                    </div>
-                                    <div class="stock__item text-danger">Out Of Stock</div>
-                                </div>
-                                <button type="button" class="action__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.25 3.5H2.75M2.75 3.5H14.75M2.75 3.5V14C2.75 14.3978 2.90804 14.7794 3.18934 15.0607C3.47064 15.342 3.85218 15.5 4.25 15.5H11.75C12.1478 15.5 12.5294 15.342 12.8107 15.0607C13.092 14.7794 13.25 14.3978 13.25 14V3.5H2.75ZM5 3.5V2C5 1.60218 5.15804 1.22064 5.43934 0.93934C5.72064 0.658035 6.10218 0.5 6.5 0.5H9.5C9.89782 0.5 10.2794 0.658035 10.5607 0.93934C10.842 1.22064 11 1.60218 11 2V3.5M6.5 7.25V11.75M9.5 7.25V11.75"
-                                            stroke="#667085" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>Delete</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    Shopping Cart Item Start
-                    <div class="shopping-card">
-                        <a href="#" class="shopping-card__image">
-                            <img src="assets/img/product/product-3.png" alt="cart-product" />
-                        </a>
-                        <div class="shopping-card__content">
-                            <div class="shopping-card__content-top">
-                                <h5 class="product__title">
-                                    <a href="#">Bottled Pure Water</a>
-                                </h5>
-                                <h5 class="product__price">$24.40</h5>
-                            </div>
-                            <div class="shopping-card__content-bottom">
-                                <div class="quantity__wrapper">
-                                    <div class="quantity">
-                                        <button type="button" class="decressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                        <input class="qnttinput" type="number" disabled value="0" min="01" max="100" />
-                                        <button type="button" class="incressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                    </div>
-                                    <div class="stock__item">In Stock</div>
-                                </div>
-                                <button type="button" class="action__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.25 3.5H2.75M2.75 3.5H14.75M2.75 3.5V14C2.75 14.3978 2.90804 14.7794 3.18934 15.0607C3.47064 15.342 3.85218 15.5 4.25 15.5H11.75C12.1478 15.5 12.5294 15.342 12.8107 15.0607C13.092 14.7794 13.25 14.3978 13.25 14V3.5H2.75ZM5 3.5V2C5 1.60218 5.15804 1.22064 5.43934 0.93934C5.72064 0.658035 6.10218 0.5 6.5 0.5H9.5C9.89782 0.5 10.2794 0.658035 10.5607 0.93934C10.842 1.22064 11 1.60218 11 2V3.5M6.5 7.25V11.75M9.5 7.25V11.75"
-                                            stroke="#667085" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>Delete</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!-- Shopping Cart Item Start -->
-                    <!--<div class="shopping-card">
-                        <a href="#" class="shopping-card__image">
-                            <img src="assets/img/product/product-4.png" alt="cart-product" />
-                        </a>
-                        <div class="shopping-card__content">
-                            <div class="shopping-card__content-top">
-                                <h5 class="product__title">
-                                    <a href="#">Bottled Pure Water</a>
-                                </h5>
-                                <h5 class="product__price">$24.40</h5>
-                            </div>
-                            <div class="shopping-card__content-bottom">
-                                <div class="quantity__wrapper">
-                                    <div class="quantity">
-                                        <button type="button" class="decressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                        <input class="qnttinput" type="number" disabled value="0" min="01" max="100" />
-                                        <button type="button" class="incressQnt">
-                                            <span class="bar"></span>
-                                        </button>
-                                    </div>
-                                    <div class="stock__item text-danger">Out Of Stock</div>
-                                </div>
-                                <button type="button" class="action__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.25 3.5H2.75M2.75 3.5H14.75M2.75 3.5V14C2.75 14.3978 2.90804 14.7794 3.18934 15.0607C3.47064 15.342 3.85218 15.5 4.25 15.5H11.75C12.1478 15.5 12.5294 15.342 12.8107 15.0607C13.092 14.7794 13.25 14.3978 13.25 14V3.5H2.75ZM5 3.5V2C5 1.60218 5.15804 1.22064 5.43934 0.93934C5.72064 0.658035 6.10218 0.5 6.5 0.5H9.5C9.89782 0.5 10.2794 0.658035 10.5607 0.93934C10.842 1.22064 11 1.60218 11 2V3.5M6.5 7.25V11.75M9.5 7.25V11.75"
-                                            stroke="#667085" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>Delete</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    Shopping Cart Item End
-                </div>
-                Cart Items End
-                Cart SubTotal Start 
-                <ul class="cart__subtotal">
-                    <li>
-                        <span class="label">Subtotal</span>
-                        <span class="value">$45.00</span>
-                    </li>
-                    <li>
-                        <span class="label">Shipping:</span>
-                        <span class="value">$15.22</span>
-                    </li>
-                </ul>
-                Cart SubTotal End 
-                Total Start 
-                <div class="cart__total">
-                    <h3>Total <span>(Incl. VAT)</span></h3>
-                    <div class="total">$60.22</div>
-                </div>
-                Total End 
-            </div>
-            Cart Button Start 
-            <div class="cart__btns bttn">
-                <a href="#" class="btn-1">Go To Checkout</a>
-                <a href="#" class="btn-2">Continue shopping</a>
-            </div>
-            Cart Button End 
-        </div>
-    </div>
-    Header FlyoutCart End 
-
-    Back to Top Start
-    <div id="toTop" class="back-to-top text-right">
-        <img src="assets/img/water-bottle.png" alt="" />
-    </div>
-    Back to Top End-->
 
     <div class="chat-ws">
         <a href="https://api.whatsapp.com/send?phone=5492657624480&text=Me%20interesa%20recibir%20información" target="_blank">
