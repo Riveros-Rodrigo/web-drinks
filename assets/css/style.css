@@ -1643,6 +1643,7 @@ form .top-input {
 
 .about-section {
   padding-bottom: 0px;
+  padding-top: 60px;
 }
 .about-title {
   padding-left: 40px;
@@ -2660,12 +2661,26 @@ form .top-input {
   display: block;
   height: 100%;
   width: 100%;
-  background-color: rgb(0 40 121 / 90%);
+  
   padding: 10% 0%;
 }
 
 .nosotros-banner {
   background: url(../img/banner-pic/nosotros-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.ser-parte-banner {
+  background: url(../img/banner-pic/ser-parte.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.contact-banner {
+  background: url(../img/banner-pic/contacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -4926,9 +4941,14 @@ top: 0 !important;
 .title-nosotros{
   font-size: 36px;
 }
-
 .textgris{
   color: #636364;
+}
+.textwhite{
+  color: #FFFFFF;
+}
+.textyellow{
+  color: #FFD43B;
 }
 
 .logoamarillo{
@@ -4937,4 +4957,55 @@ top: 0 !important;
 
 .title-marcas{
   font-size: 40px;
+}
+
+/* Fondo modal */
+.modal-backdrop.show {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Caja principal del modal */
+.age-modal-box {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  border: none;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo */
+.logo-modal {
+  max-width: 160px;
+}
+
+/* Botones circulares */
+.age-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #063066;
+  background: transparent;
+  color: #063066;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.age-btn:hover {
+  background-color: #063066;
+  color: #fff;
+}
+
+/* Texto legal */
+.age-legal {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* Texto general */
+.age-modal-box h5 {
+  letter-spacing: 0.5px;
+  color: #333;
 }

@@ -285,20 +285,55 @@
 
     // Back to Top JS 
 
-    $('body').append('<div id="toTop" class="back-to-top"><i class="ti-arrow-up"></i></div>');
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() != 0) {
-            $('#toTop').fadeIn();
-        } else {
-            $('#toTop').fadeOut();
-        }
-    });
-    $('#toTop').on('click', function () {
-        $("html, body").animate({ scrollTop: 0 }, 2000);
-        return false;
-    });
+    //$('body').append('<div id="toTop" class="back-to-top"><i class="ti-arrow-up"></i></div>');
+    //$(window).on('scroll', function () {
+    //    if ($(this).scrollTop() != 0) {
+    //        $('#toTop').fadeIn();
+    //    } else {
+    //        $('#toTop').fadeOut();
+    //    }
+    //});
+    //$('#toTop').on('click', function () {
+    //    $("html, body").animate({ scrollTop: 0 }, 2000);
+    //    return false;
+    //});
 
+// --- Funciones de cookie ---
+function setCookie(name, value, days) {
+  const d = new Date();
+  d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+  const expires = "expires=" + d.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
 
+function getCookie(name) {
+  const cname = name + "=";
+  const decoded = decodeURIComponent(document.cookie);
+  const ca = decoded.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i].trim();
+    if (c.indexOf(cname) === 0) return c.substring(cname.length, c.length);
+  }
+  return "";
+}
+
+// --- Lógica del modal ---
+$(document).ready(function () {
+  const cookie = getCookie('age_ok');
+
+  if (cookie !== '1') {
+    $('#ageModal').modal('show');
+  }
+
+  $('#btnYes').click(function () {
+    setCookie('age_ok', '1', 90);
+    $('#ageModal').modal('hide');
+  });
+
+  $('#btnNo').click(function () {
+    window.location.href = 'https://www.google.com'; // <-- Cambia esta URL
+  });
+});
 
 
 
